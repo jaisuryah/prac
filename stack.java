@@ -27,15 +27,21 @@ class Main {
         return data;
     }
     
+    public static int size()
+    {
+        return top;
+    }
+    
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
-      int n = 5;
-      for(int i=0;i<n;i++)
-      {
-          push(sc.nextInt());  //push
-      }
-      System.out.println(pop());   //pop
-      show();                         //print
+    //   int n = 5;
+    //   for(int i=0;i<n;i++)
+    //   {
+    //       push(sc.nextInt());  //push
+    //   }
+    //   System.out.println(pop());   //pop
+    //   show();         
+    //   size();                   //print
     
     Stack<Integer> st = new Stack<Integer>();
     
@@ -46,6 +52,7 @@ class Main {
     st.empty();
     System.out.println(st.peek());
     System.out.println(st.search(2));
+    System.out.println(st.empty());
        
        
     }
